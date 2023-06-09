@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ImagesMAUI.MainPage">
+
+    <Grid RowDefinitions="*,Auto,Auto" 
+          RowSpacing="25" 
+          Padding="30" 
+          BackgroundColor="Gray">
+
+        <Image x:Name="image" 
+               Grid.Row="0" 
+               HeightRequest="300"/>
+
+        <Button x:Name="button"
+                Grid.Row="1"
+                HeightRequest="100"
+                FontSize="30"
+                Text="Take a photo"
+                Clicked="Button_Clicked"/>
+
+        <Label x:Name="label"
+               Grid.Row="2"
+               Text="File path:"
+               FontSize="15"/>
+
+    </Grid>
+
+</ContentPage>
